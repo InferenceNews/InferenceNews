@@ -534,12 +534,16 @@ ol {
   flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: var(--spacing-lg);
   perspective: 1000px;
 }
 
 .preview__phone {
-  width: 260px;
+  width: auto;
+  max-width: 400px;
+  height: 500px;
+  object-fit: contain;
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-lg);
   transition: transform var(--transition-slow);
